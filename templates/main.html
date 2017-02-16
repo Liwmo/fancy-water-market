@@ -5,7 +5,7 @@
 	<form method="post">
 	{% for product in products %}
 		<div>
-			<img src="{{product.link}}">
+			<img src="{{product.photo}}">
 			<span>{{product.name}}</span>
 			<span>{{product.price}}</span>
 			<input type="number" name="{{product.name}}">
