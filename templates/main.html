@@ -6,6 +6,7 @@
 	{% for product in products %}
 		<div>
 			<img src="{{product.link}}">
+			<span>{{product.name}}</span>
 			<span>{{product.price}}</span>
 			<input type="number" name="{{product.name}}">
 		</div>

@@ -63,8 +63,8 @@ class MainHandler(Handler):
 		products = db.GqlQuery("SELECT * FROM Inventory")
 		for product in products:
 			quantity = self.request.get(product.name)
-			total += quantity * product.price
-		self.redirect("/confirm?total=" + total)
+			total += float(quantity) * product.price
+		self.redirect("/confirm?total=" + str(total))
 
 class LoginHandler(Handler):
 	def get(self):
