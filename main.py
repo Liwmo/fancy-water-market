@@ -71,9 +71,9 @@ class LoginHandler(Handler):
 		# pwd_hash = hashutils.make_pwd_hash("test", "password")
 		# user = User(username = "test", pwd_hash=pwd_hash)
 		# user.put()
-		# Inventory(name="Creed Silver Mountain Water", price=515.00, photo="https://www.google.com/aclk?sa=l&ai=DChcSEwj74fiaxpXSAhUeSw0KHZJ9Be4YABABGgJxYg&sig=AOD64_0q4OYm_yYDvcyVji56alDwobTjcA&ctype=5&q=&ved=0ahUKEwiazPSaxpXSAhXMlVQKHVfVB50QwjwIBQ&adurl=").put()
-		# Inventory(name="Creed Virgin Island Water", price=395.00, photo="https://www.google.com/aclk?sa=l&ai=DChcSEwj74fiaxpXSAhUeSw0KHZJ9Be4YABAHGgJxYg&sig=AOD64_0uyZ1dGL-3Nc7LhfDg5i2Ksehe8Q&ctype=5&q=&ved=0ahUKEwiazPSaxpXSAhXMlVQKHVfVB50QwjwIKw&adurl=").put()
-		# Inventory(name="Essentia Alkaline Water", price=21.99, photo="https://www.google.com/aclk?sa=l&ai=DChcSEwj74fiaxpXSAhUeSw0KHZJ9Be4YABAbGgJxYg&sig=AOD64_1gK3_hk6VYecKiR-adj6Xs7lD0MQ&ctype=5&q=&ved=0ahUKEwiazPSaxpXSAhXMlVQKHVfVB50QqCsIqAE&adurl=").put()
+		# Inventory(name="Creed Silver Mountain Water", price=515.00, photo="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSzvbx7vB8gmneeYudmpqh5UeoNNo0Hqwfsh2_kAaKQOri2QX67tmXYJZ8kFloPQcUDoY5b--V9&usqp=CAE").put()
+		# Inventory(name="Creed Virgin Island Water", price=395.00, photo="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTvun6HEdTUecINnUHyt0AKoLuqlfnuT1BDF_LuYRAECq7RoTvh29sftCQ2yBRrWAg0WjyCF_Q&usqp=CAE").put()
+		# Inventory(name="Essentia Alkaline Water", price=21.99, photo="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQuMEhkaaTeXxQ0dvwypGWRE-t0ES61DdvthIrcD0bm8fHfO6kRSaJ3GLcZnJH6ZoHRODpKpvvp&usqp=CAE").put()
 
 		error = ""
 		self.render("login.html", error = error)
