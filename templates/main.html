@@ -3,15 +3,21 @@
 {% block content %}
 
 	<form method="post">
+		<table>
 	{% for product in products %}
-		<div>
-			<img src="{{product.photo}}">
-			<span>{{product.name}}</span>
-			<span>{{product.price}}</span>
-			<input type="number" name="{{product.name}}">
-		</div>
+		<tr>
+			<td>
+				<img style="height: 200px" src="{{product.photo}}">
+			</td>
+			<td>
+				<div>{{product.name}}</div>
+				<div>{{ '$'+'{:.2f}'.format(product.price)}}</div>
+				<input type="number" name="{{product.name}}">
+			</td>
+		</tr>
 	{% endfor %}
-		<input type="submit">
+		</table>
+		<input type="submit" value="Take My Money">
 	</form>
 
 

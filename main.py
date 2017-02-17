@@ -58,12 +58,14 @@ class MainHandler(Handler):
 		filtered_product = products.order("price")
 		self.render("main.html", products = filtered_product)
 
+	@user_required
 	def post(self):
 		total = 0
 		products = db.GqlQuery("SELECT * FROM Inventory")
 		for product in products:
 			quantity = self.request.get(product.name)
-			total += float(quantity) * product.price
+			if quantity:
+				total += float(quantity) * product.price
 		self.redirect("/confirm?total=" + str(total))
 
 class LoginHandler(Handler):
